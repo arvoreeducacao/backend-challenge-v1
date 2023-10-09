@@ -155,7 +155,7 @@ Body:
 - Documentar em um README como seu código está estruturado, como rodá-lo e uma explicação sucinta das principais decisões técnicas que você tomou no seu código.
 - Documentação da API.
 
-## Será um Plus se você fizer:
+## Diferenciais:
 
 - GraphQL: O schema pode refletir a mesma estrutura acima.
 - Integração com CI.
