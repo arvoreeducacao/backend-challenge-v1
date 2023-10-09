@@ -159,9 +159,3 @@ Body:
 
 - GraphQL: O schema pode refletir a mesma estrutura acima.
 - Integração com CI.
-
-## Prazos:
-
-- Consegue fazer até dia 27/09?
-- Caso entregue antes, pontos extras!
-- Em caso de dúvidas, basta responder a todos neste e-mail.
