@@ -31,14 +31,134 @@ A modelagem deverá utilizar apenas uma entidade (Entity), que poderá represent
 - **inep** (opcional): Código INEP, usado apenas para `entity_type` com valor "school".
 - **parent_id**: Identificador da entidade antecessora na hierarquia. A entidade mais alta da hierarquia (network ou school) terá `parent_id` nulo.
 
+## Exemplos de Requisições:
+
+### Criação de uma entidade:
+
+No exemplo abaixo, uma escola sem um antecessor hierárquico está sendo criada.
+
+**Request**:
+
+```
+POST /api/v2/partners/entities
+
+Headers:
+Content-Type:application/json
+
+Body:
+{
+  "name": "Escola Exemplo",
+  "entity_type": "school",
+  "inep": "123456",
+  "parent_id": null
+}
+```
+
+**Response**:
+
+```
+Headers:
+Content-Type:application/json; charset=utf-8
+
+Body:
+{
+  "data": {
+    "id": 2,
+    "entity_type": "school",
+    "inep": "123456",
+    "name": "Escola Exemplo",
+    "parent_id": null,
+    "subtree_ids": []
+  }
+}
+```
+
+*Nota*: A chave `subtree_ids` deverá trazer uma lista com os IDs de todas as entidades relacionadas à entidade retornada.
+
+### Exibição de uma entidade:
+
+**Request**:
+
+```
+GET /api/v2/partners/entities/id-da-entidade
+
+Headers:
+Content-Type:application/json
+
+Parameters:
+id: integer - ex: 2
+```
+
+**Response**:
+
+```
+Headers:
+Content-Type:application/json; charset=utf-8
+
+Body:
+{
+  "data": {
+    "id": 2,
+    "entity_type": "school",
+    "inep": "123456",
+    "name": "Escola Exemplo",
+    "parent_id": null,
+    "subtree_ids": [3, 4]
+  }
+}
+```
+
+### Edição de uma entidade:
+
+**Request**:
+
+```
+PUT /api/v2/partners/entities/id-da-entidade
+
+Headers:
+Content-Type:application/json
+
+Parameters:
+id: integer - ex: 2
+
+Body:
+{
+  "name": "Escola Exemplo",
+  "entity_type": "school",
+  "inep": "789123",
+  "parent_id": null
+}
+```
+
+**Response**:
+
+```
+Headers:
+Content-Type:application/json; charset=utf-8
+
+Body:
+{
+  "data": {
+    "id": 2,
+    "entity_type": "school",
+    "inep": "789123",
+    "name": "Escola Exemplo",
+    "parent_id": null,
+    "subtree_ids": [3, 4]
+  }
+}
+```
+
 ## Requisitos Mínimos:
 
 - Código bem testado.
 - Documentar em um README como seu código está estruturado, como rodá-lo e uma explicação sucinta das principais decisões técnicas que você tomou no seu código.
+- Documentação da API.
 
-## Requisitos Opcionais:
+## Será um Plus se você fizer:
 
 - GraphQL: O schema pode refletir a mesma estrutura acima.
+- Integração com CI.
 
 ## Prazos:
 
