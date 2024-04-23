@@ -6,8 +6,6 @@
   </ul>
 </div>
 
-## Níveis Estagiário e Júnior
-
 ### Contexto
 Você está começando a desenvolver um sistema para a Árvore, que possui diversos parceiros que desejam replicar e administrar sua estrutura de Escolas e Turmas. O objetivo deste teste é construir uma pequena API que permita essa gestão de forma simples.
 
