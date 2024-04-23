@@ -1,10 +1,6 @@
 ![image](https://assets-global.website-files.com/61155c49f7b752684a9f0584/61201e989ae795462db99155_logo-arvore.svg)
 
-<div id="user-content-toc">
-  <ul>
-    <summary><h1 style="display: inline-block;">Challenge Backend</h1></summary>
-  </ul>
-</div>
+# Backend challenge 
 
 ### Contexto
 Você está começando a desenvolver um sistema para a Árvore, que possui diversos parceiros que desejam replicar e administrar sua estrutura de Escolas e Turmas. O objetivo deste teste é construir uma pequena API que permita essa gestão de forma simples.
