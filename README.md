@@ -2,6 +2,11 @@
 
 # Backend challenge 
 
+- [Níveis Estagiário e Júnior](#n%C3%ADveis-estagi%C3%A1rio-e-j%C3%BAnior)
+- [Níveis Pleno e Sênior](#n%C3%ADveis-estagi%C3%A1rio-e-j%C3%BAnior)
+
+## Níveis Estagiário e Júnior
+
 ### Contexto
 Você está começando a desenvolver um sistema para a Árvore, que possui diversos parceiros que desejam replicar e administrar sua estrutura de Escolas e Turmas. O objetivo deste teste é construir uma pequena API que permita essa gestão de forma simples.
 
