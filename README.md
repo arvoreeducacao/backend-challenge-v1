@@ -3,7 +3,7 @@
 # Backend challenge 
 
 - [Níveis Estagiário e Júnior](#n%C3%ADveis-estagi%C3%A1rio-e-j%C3%BAnior)
-- [Níveis Pleno e Sênior](#n%C3%ADveis-estagi%C3%A1rio-e-j%C3%BAnior)
+- [Níveis Pleno e Sênior](#n%C3%ADveis-pleno-e-s%C3%AAnior)
 
 ## Níveis Estagiário e Júnior
 
